@@ -1,0 +1,28 @@
+.app-container {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.task {
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-title {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.calendar {
+  margin: 10px;
+}

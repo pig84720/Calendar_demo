@@ -1,0 +1,96 @@
+  .calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 276px;
+    font-size: 16px;
+    border: 1px solid #e6e6e6;
+  }
+  
+  .calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    height: 44px;
+    margin-bottom: 16px;
+  }
+
+  
+  .prev-month,
+  .next-month {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+  }
+  
+  .day-name {
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+  }
+  
+  .day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 36px;
+    cursor: pointer;
+  }
+  
+  .day:hover {
+    background-color: #e6e6e6;
+  }
+
+  .days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .non-current-month:hover {
+    cursor: not-allowed;
+    background-color: transparent !important;
+  }
+  
+  .non-current-month {
+    color: #ccc;
+    color: #006edc;
+    pointer-events: none;
+  }
+  
+  .button {
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+
+  .button:hover {
+    background-color: #e6e6e6;
+  }
+
+  .today {
+    background-color: #ffff76 !important;
+  }
+
+  .selected-range {
+      background-color: #006edc !important;
+      color: #ffffff;
+  }
+
+  .selected-start, .selected-range, .selected-end {
+    background-color: #006edc;
+    color: white; /* 將文字顏色設為白色，使其在深背景下易於閱讀 */
+  }
+
+  .past-month {
+    color: gray;
+  }
